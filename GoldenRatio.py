@@ -56,7 +56,7 @@ class PaneCommand(sublime_plugin.WindowCommand):
 
         ratio = sublime.load_settings('GoldenRatio.sublime-settings').get('golden_ratio')
         if ratio <= 1:
-            ratio = 1.05
+            ratio = 1
 
         cols = self._dim(cols, current_cell[XMIN], current_cell[XMAX], ratio)
         rows = self._dim(rows, current_cell[YMIN], current_cell[YMAX], ratio)
